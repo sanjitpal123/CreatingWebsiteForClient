@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipal & Public Utility Castings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans ">
+
+    <!-- Municipal & Public Utility Castings Section -->
+    <div class="w-full h-auto md:min-h-[70vh] flex justify-center flex-col md:flex-row px-6 py-12 md:px-12 md:py-20">
+        <!-- Text Section -->
+        <div class="w-full md:w-[50%] flex flex-col justify-center p-6 md:p-10 text-center md:text-left bg-white ">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-[#FD5D14]">Municipal & Public Utility Castings</h1>
+            <p class="text-sm sm:text-base md:text-lg text-[#02245B] leading-relaxed">
+                Municipal and public utility castings play a crucial role in the construction and maintenance of urban infrastructure. These castings are essential for ensuring the durability, efficiency, and safety of various public services, such as water, sewage, stormwater drainage, and electrical systems.
+                <br><br>
+                The castings are made from high-quality materials such as ductile iron, which are known for their strength and resilience. These castings are used in products like manhole covers, drainage grates, valve boxes, and other components required for public utility systems.
+                <br><br>
+                By incorporating advanced manufacturing techniques, these castings are designed to withstand heavy traffic, weather conditions, and the stresses associated with public utility systems. Municipal and public utility castings are integral to creating and maintaining reliable infrastructure that serves communities worldwide.
+            </p>
+        </div>
+        <!-- Image Section -->
+        <div class="w-full md:w-[50%] relative mt-8 md:mt-0">
+            <img src="../Water.gif" alt="Municipal & Public Utility Castings" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+   <!-- FAQ Section -->
+   <div class="w-full py-16 px-6 md:px-12 ">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-[#FD5D14]">Frequently Asked Questions</h2>
+        <div class="max-w-4xl mx-auto space-y-8">
+            <!-- Question 1 -->
+            <div class="border-b border-white py-6 px-6 rounded-lg bg-[#1A3D60] hover:bg-[#FD5D14] transition-all duration-300">
+                <button class="w-full text-left text-xl md:text-2xl text-white focus:outline-none flex justify-between items-center" id="faq1" onclick="toggleFAQ(1)">
+                    <span class="font-semibold">What are municipal and public utility castings?</span>
+                    <i class="fas fa-chevron-down text-white" id="icon1"></i>
+                </button>
+                <div id="answer1" class="hidden mt-4 text-lg text-white pl-6">
+                    Municipal and public utility castings are cast metal components used in infrastructure systems such as water, sewage, and electrical utilities. They include products like manhole covers, valve boxes, and drainage grates.
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="border-b border-white py-6 px-6 rounded-lg bg-[#1A3D60] hover:bg-[#FD5D14] transition-all duration-300">
+                <button class="w-full text-left text-xl md:text-2xl text-white focus:outline-none flex justify-between items-center" id="faq2" onclick="toggleFAQ(2)">
+                    <span class="">Why are these castings important?</span>
+                    <i class="fas fa-chevron-down text-white" id="icon2"></i>
+                </button>
+                <div id="answer2" class="hidden mt-4 text-white text-lg pl-6">
+                    These castings are essential for the proper functioning of municipal infrastructure, ensuring the durability, safety, and efficiency of utilities such as water distribution and sewage systems.
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="border-b border-white py-6 px-6 rounded-lg bg-[#1A3D60] hover:bg-[#FD5D14] transition-all duration-300">
+                <button class="w-full text-left text-xl md:text-2xl text-white focus:outline-none flex justify-between items-center" id="faq3" onclick="toggleFAQ(3)">
+                    <span>What materials are used for municipal and public utility castings?</span>
+                    <i class="fas fa-chevron-down text-white" id="icon3"></i>
+                </button>
+                <div id="answer3" class="hidden mt-4 text-white text-lg pl-6">
+                    The most common material used is ductile iron, which offers superior strength, resilience, and resistance to corrosion and wear, making it ideal for harsh urban environments.
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="border-b border-white py-6 px-6 rounded-lg bg-[#1A3D60] hover:bg-[#FD5D14] transition-all duration-300">
+                <button class="w-full text-left text-xl md:text-2xl text-white focus:outline-none flex justify-between items-center" id="faq4" onclick="toggleFAQ(4)">
+                    <span>How are municipal and public utility castings manufactured?</span>
+                    <i class="fas fa-chevron-down text-white" id="icon4"></i>
+                </button>
+                <div id="answer4" class="hidden mt-4 text-white text-lg pl-6">
+                    These castings are manufactured using advanced techniques such as sand casting, where molten metal is poured into a mold to form the desired components, ensuring precision and strength.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(faqNumber) {
+            const answer = document.getElementById('answer' + faqNumber);
+            const icon = document.getElementById('icon' + faqNumber);
+
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+    </script>
+
+</body>
+</html>

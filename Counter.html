@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Weights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans ">
+
+    <!-- Counter Weights Section -->
+    <div class="w-full h-auto md:min-h-[70vh] flex justify-center flex-col md:flex-row px-6 py-12 md:px-12 md:py-20">
+        <!-- Text Section -->
+        <div class="w-full md:w-[50%] flex flex-col justify-center p-6 md:p-10 text-center md:text-left bg-white ">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-[#FD5D14]">Counter Weights</h1>
+            <p class="text-sm sm:text-base md:text-lg text-[#02245B] leading-relaxed">
+                Counter weights are vital components used in mechanical systems, primarily to balance or offset a load, reducing the amount of force needed to operate machinery. These weights are commonly used in cranes, elevators, and other heavy-lifting equipment to provide stability and control during operations.
+                <br><br>
+                Made from durable materials like cast iron or steel, counter weights are carefully designed and manufactured to ensure precise performance. They help to improve efficiency and safety by maintaining proper balance and reducing stress on the system.
+            </p>
+        </div>
+        <!-- Image Section -->
+        <div class="w-full md:w-[50%] relative mt-8 md:mt-0">
+            <img src="../Water.gif" alt="Counter Weights" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+   <!-- FAQ Section -->
+   <div class="w-full py-16 px-6 md:px-12 ">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-[#FD5D14]">Frequently Asked Questions</h2>
+        <div class="max-w-4xl mx-auto space-y-8">
+            <!-- Question 1 -->
+            <div class="border-b border-white py-6 px-6 rounded-lg bg-[#1A3D60] hover:bg-[#FD5D14] transition-all duration-300">
+                <button class="w-full text-left text-xl md:text-2xl text-white focus:outline-none flex justify-between items-center" id="faq1" onclick="toggleFAQ(1)">
+                    <span class="font-semibold">What are counter weights?</span>
+                    <i class="fas fa-chevron-down text-white" id="icon1"></i>
+                </button>
+                <div id="answer1" class="hidden mt-4 text-lg text-white pl-6">
+                    Counter weights are heavy materials used to balance or offset the load in machines like cranes and elevators, improving stability and control during operation.
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="border-b border-white py-6 px-6 rounded-lg bg-[#1A3D60] hover:bg-[#FD5D14] transition-all duration-300">
+                <button class="w-full text-left text-xl md:text-2xl text-white focus:outline-none flex justify-between items-center" id="faq2" onclick="toggleFAQ(2)">
+                    <span class="">Why are counter weights important?</span>
+                    <i class="fas fa-chevron-down text-white" id="icon2"></i>
+                </button>
+                <div id="answer2" class="hidden mt-4 text-white text-lg pl-6">
+                    Counter weights ensure the proper balance and safety of lifting equipment by offsetting heavy loads, which reduces wear and tear on machinery and minimizes energy usage.
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="border-b border-white py-6 px-6 rounded-lg bg-[#1A3D60] hover:bg-[#FD5D14] transition-all duration-300">
+                <button class="w-full text-left text-xl md:text-2xl text-white focus:outline-none flex justify-between items-center" id="faq3" onclick="toggleFAQ(3)">
+                    <span>What materials are used for counter weights?</span>
+                    <i class="fas fa-chevron-down text-white" id="icon3"></i>
+                </button>
+                <div id="answer3" class="hidden mt-4 text-white text-lg pl-6">
+                    Counter weights are commonly made from heavy-duty materials such as cast iron, steel, or concrete, chosen for their strength and durability in demanding environments.
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="border-b border-white py-6 px-6 rounded-lg bg-[#1A3D60] hover:bg-[#FD5D14] transition-all duration-300">
+                <button class="w-full text-left text-xl md:text-2xl text-white focus:outline-none flex justify-between items-center" id="faq4" onclick="toggleFAQ(4)">
+                    <span>How are counter weights manufactured?</span>
+                    <i class="fas fa-chevron-down text-white" id="icon4"></i>
+                </button>
+                <div id="answer4" class="hidden mt-4 text-white text-lg pl-6">
+                    Counter weights are manufactured through casting, where molten metal is poured into molds, or through forging processes, ensuring they meet the necessary weight, size, and durability specifications.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(faqNumber) {
+            const answer = document.getElementById('answer' + faqNumber);
+            const icon = document.getElementById('icon' + faqNumber);
+
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+    </script>
+
+</body>
+</html>

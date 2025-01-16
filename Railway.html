@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Castings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans ">
+
+    <!-- Railway Castings Section -->
+    <div class="w-full h-auto md:min-h-[70vh] flex justify-center flex-col md:flex-row px-6 py-12 md:px-12 md:py-20">
+        <!-- Text Section -->
+        <div class="w-full md:w-[50%] flex flex-col justify-center p-6 md:p-10 text-center md:text-left bg-white ">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-[#FD5D14]">Railway Castings</h1>
+            <p class="text-sm sm:text-base md:text-lg text-[#02245B] leading-relaxed">
+                Railway castings are essential components used in the construction and maintenance of railway infrastructure. They are made from high-strength materials such as cast iron and steel to ensure durability and safety. These castings include railway track components like rail joints, cross ties, and switch plates that withstand the constant pressure and wear from heavy train traffic.
+                <br><br>
+                With advanced manufacturing processes, railway castings are designed for long-lasting performance under harsh conditions, providing stability and reliability to the railway network.
+            </p>
+        </div>
+        <!-- Image Section -->
+        <div class="w-full md:w-[50%] relative mt-8 md:mt-0">
+            <img src="../Water.gif" alt="Railway Castings" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+   <!-- FAQ Section -->
+   <div class="w-full py-16 px-6 md:px-12 ">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-[#FD5D14]">Frequently Asked Questions</h2>
+        <div class="max-w-4xl mx-auto space-y-8">
+            <!-- Question 1 -->
+            <div class="border-b border-white py-6 px-6 rounded-lg bg-[#1A3D60] hover:bg-[#FD5D14] transition-all duration-300">
+                <button class="w-full text-left text-xl md:text-2xl text-white focus:outline-none flex justify-between items-center" id="faq1" onclick="toggleFAQ(1)">
+                    <span class="font-semibold">What are railway castings?</span>
+                    <i class="fas fa-chevron-down text-white" id="icon1"></i>
+                </button>
+                <div id="answer1" class="hidden mt-4 text-lg text-white pl-6">
+                    Railway castings are components made from durable materials like cast iron and steel, used to construct and maintain railway tracks, such as rail joints, ties, and switch plates.
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="border-b border-white py-6 px-6 rounded-lg bg-[#1A3D60] hover:bg-[#FD5D14] transition-all duration-300">
+                <button class="w-full text-left text-xl md:text-2xl text-white focus:outline-none flex justify-between items-center" id="faq2" onclick="toggleFAQ(2)">
+                    <span class="">Why are railway castings important?</span>
+                    <i class="fas fa-chevron-down text-white" id="icon2"></i>
+                </button>
+                <div id="answer2" class="hidden mt-4 text-white text-lg pl-6">
+                    Railway castings ensure the stability and safety of railway tracks, supporting the weight and stresses of heavy trains, thus enabling efficient and reliable rail transportation.
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="border-b border-white py-6 px-6 rounded-lg bg-[#1A3D60] hover:bg-[#FD5D14] transition-all duration-300">
+                <button class="w-full text-left text-xl md:text-2xl text-white focus:outline-none flex justify-between items-center" id="faq3" onclick="toggleFAQ(3)">
+                    <span>What materials are used for railway castings?</span>
+                    <i class="fas fa-chevron-down text-white" id="icon3"></i>
+                </button>
+                <div id="answer3" class="hidden mt-4 text-white text-lg pl-6">
+                    Railway castings are typically made from cast iron and steel, known for their high strength, durability, and resistance to corrosion, making them ideal for the harsh railway environment.
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="border-b border-white py-6 px-6 rounded-lg bg-[#1A3D60] hover:bg-[#FD5D14] transition-all duration-300">
+                <button class="w-full text-left text-xl md:text-2xl text-white focus:outline-none flex justify-between items-center" id="faq4" onclick="toggleFAQ(4)">
+                    <span>How are railway castings manufactured?</span>
+                    <i class="fas fa-chevron-down text-white" id="icon4"></i>
+                </button>
+                <div id="answer4" class="hidden mt-4 text-white text-lg pl-6">
+                    Railway castings are manufactured using advanced techniques such as sand casting and die casting, where molten metal is poured into molds to form the necessary railway components.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(faqNumber) {
+            const answer = document.getElementById('answer' + faqNumber);
+            const icon = document.getElementById('icon' + faqNumber);
+
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+    </script>
+
+</body>
+</html>
